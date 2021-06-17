@@ -23,3 +23,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       working-directory: WebApplication1/WebApplication1
+    - name: Publish
+      run: dotnet publish -c Release -o website
+      working-directory: WebApplication1/WebApplication1
